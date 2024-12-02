@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interest</title>
+    <link rel="stylesheet" href="interest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="interest.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Compound Interest Calculator</h1>
+      </header>
+      <nav>
+        <h3>
+          Enter principal, select the period, adjust the APR, and enter the year
+          to calculate accumulated interest and the total amount.
+        </h3>
+      </nav>
+      <article>
+        <form>
+          <div>Principal</div>
+          <input id="principal" />
+          <div>Period</div>
+          <select id="period">
+            <option value="0">---</option>
+            <option value="1">Yearly</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
+            <option value="365">Daily</option>
+          </select>
+          <div>APR <span id="aprDisplay">0</span>%</div>
+          <input type="range" id="apr" value="0" min="0" max="50"></input>
+          <div>Years</div>
+          <input id="years" type="number" />
+        </form>
+        <h2>Interest is <output id="accumulated" /></h2>
+        <h2>Total is <output id="total" /></h2>
+      </article>
+      <footer>
+        <a
+          href="https://codesandbox.io/p/sandbox/9qmzvp?file=%2Findex.html%3A27%2C10"
+          >sandbox</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>

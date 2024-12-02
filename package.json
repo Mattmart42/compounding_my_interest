@@ -1,0 +1,15 @@
+{
+  "name": "compounding-my-interest",
+  "version": "1.0.0",
+  "description": "A web app for calculating compound interest.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Matt Martinez",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
